@@ -1,0 +1,106 @@
+---
+title: "Defining Sequences in R"
+subtitle: "CIS 351:"
+date: today
+author: ""
+format:
+  html:
+    embed-resources: true
+    code-overflow: wrap
+    number-sections: true
+---
+
+## Load Packages and Data
+
+```{r}
+#| message: false
+library()
+
+library()
+
+library()
+
+library()
+
+dogs <- read_csv() |>
+  clean_names()
+
+earthquakes <- read_csv() |>
+  clean_names()
+
+fastfood <- read_csv() |>
+  clean_names()
+```
+
+## Defining Integer Sequences
+
+### The `:` operator 
+
+The symbol `:` allows us to quickly create a vector of consecutive integers in R. This opeator is often called the **sequence operator**. 
+
+:::{.callout-note icon='false'}
+## Example 1.
+
+a. Create a vector of numerical values from 1 to 100.
+b. Create a vector of numerical values from 100 to 450.
+
+```{r}
+# (a)
+
+```
+
+```{r}
+# (b)
+
+```
+:::
+
+### The `seq()` function
+
+The `seq()` function in R generates sequences of numbers according to specified starting values, ending values, increments, or lengths. It provides greater flexibility than the `:` operator because it can create sequences with custom step sizes and a specified number of values.
+
+:::{.callout-note icon='false'}
+## Example 2.
+
+Use the `seq()` function to generate a vector of numberic values that range from 1 to 100.
+
+_Solution._
+
+```{r}
+
+```
+:::
+
+:::{.callout-note icon='false'}
+## Example 3.
+
+Use the `seq()` function to generate a vector of numeric values that range from 100 to 450.
+
+_Solution._
+
+```{r}
+
+```
+:::
+
+:::{.callout-note icon='false'}
+## Example 4.
+
+Use the `seq()` function to generate a vector of numeric values that range form 1 to 20, incrementing by 4.
+
+```{r}
+
+```
+:::
+
+:::{.callout-note icon='false'}
+## Example 5.
+
+Use the `seq()` function to generate a vector of numeric values that range from 4 to 28, where the length of the vector is 6.
+
+_Solution._
+
+```{r}
+
+```
+:::
