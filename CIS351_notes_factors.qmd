@@ -1,0 +1,66 @@
+---
+title: "Factors"
+subtitle: "CIS 351:"
+date: ""
+author: ""
+format:
+  html:
+    embed-resources: true
+    code-overflow: wrap
+    number-sections: true
+---
+
+## Load Packages and Data
+
+```{r}
+#| message: false
+library()
+
+library()
+
+library()
+
+library()
+
+dogs <- read_csv() |>
+  clean_names()
+
+earthquakes <- read_csv() |>
+  clean_names()
+
+fastfood <- read_csv() |>
+  clean_names()
+```
+
+## Factors
+
+Recall from elementary statistics that numerical variables have an inherent order, whereas categorical variables do not. However, it is sometimes necessary to have an ordered categorical variable. In R, **factors** are used to represent such ordered categorical variables.
+
+:::{.callout-note icon='false'}
+## Example 1.
+
+Apply the `sort()` function to `weekdays` vector defined below. What is the resulting output in R?
+
+```{r}
+weekdays <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+```
+
+_Solution._
+```{r}
+
+```
+:::
+
+To convert a categorical variable into a factor, we use the `factor()` function. By specifying the optional `levels` argument, we can define the order of the categories in the resulting factor.
+
+:::{.callout-note icon='false'}
+## Example 2.
+
+Convert the `weekdays` vector into a ordered factor with Sunday as the first day of the week and Saturday as the last day of the week.
+
+_Solution._
+
+```{r}
+
+```
+:::
