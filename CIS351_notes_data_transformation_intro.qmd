@@ -1,0 +1,56 @@
+---
+title: "Introduction to Data Transformation in R"
+subtitle: "CIS 351:"
+date: ""
+author: ""
+format:
+  html:
+    embed-resources: true
+    code-overflow: wrap
+    number-sections: true
+---
+
+## Load Packages and Data
+
+```{r}
+#| message: false
+library()
+
+library()
+
+library()
+
+library()
+
+dogs <- read_csv() |>
+  clean_names()
+
+earthquakes <- read_csv() |>
+  clean_names()
+
+fastfood <- read_csv() |>
+  clean_names()
+
+water_quality <- read_csv() |> 
+  clean_names()
+```
+
+
+
+## Introduction to `dplyr`
+
+The `{dplyr}` package is part of the `{tidyverse}` package. It is best understood as a grammar of data manipulation, with `dplyr` functions acting as verbs that perform actions on datasets. 
+
+Below are the most important `dplyr` verbs (functions) that we will cover in this course. Additional `dplyr` helper verbs will be introduced as needed.
+
+| Data Frame Verb | Description                                |
+|-----------------|--------------------------------------------|
+| `select()`/`pull()` | Select columns from a data frame           |
+| `mutate()`      | Add new columns or modify existing columns |
+| `filter()`      | Keep rows that satisfy a condition         |
+| `filter_out()`  | Drop rows that satisfy a condition         |
+| `summarize()`   | Calculate summary statistics for columns   |
+| `arrange()`     | Reorder rows based on one or more columns  |
+| `pivot_longer()`| Convert data frame from wider to long format |
+| `pivot_wider()` | Convert data frame from long to wide format |
+| `left_join()`   | Combine two data frames by matching values in a common column |
