@@ -146,3 +146,14 @@ _Solution._
 :::
 
 As we can see from Example 4, it is sometimes unavoidable to compose multiple functions or operations, even when using the `|>` operator. However, the pipe operator makes the sequence of operations much easier to read and follow, significantly reducing the cognitive load compared with the solution in Example 2.
+
+## Appendix
+
+Belwo is a list of new functions introduced in this section.
+
+| Function   | Description                                         |
+|------------|-----------------------------------------------------|
+| `is.na()`  | Checks for `NA`s                                    |
+| `pull()`   | Extract a single column as a vector, similar to `$` |
+| `filter()` | Keep rows that satisfy a condition                  |
+: {.striped}
