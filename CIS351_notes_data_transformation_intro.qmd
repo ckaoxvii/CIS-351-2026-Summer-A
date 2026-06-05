@@ -30,9 +30,6 @@ earthquakes <- read_csv() |>
 
 fastfood <- read_csv() |>
   clean_names()
-
-water_quality <- read_csv() |> 
-  clean_names()
 ```
 
 
